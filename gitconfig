@@ -1,0 +1,29 @@
+[alias]
+	amend = commit --amend
+	root = !pwd
+	exec = "!exec "
+	chmod = update-index --chmod
+	blame = blame -w
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+	la = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	lr = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %gs %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --walk-reflogs
+	co = checkout
+	br = branch
+	st = status -s
+	ci = commit
+	ai = commit --amend
+	ca = commit -A
+	aa = commit --amend -A
+	ds = diff --staged
+	di = diff
+	dc = diff HEAD~1 HEAD
+[color]
+	ui = true
+[diff]
+	renames = copies
+	mnemonicprefix = true
+[push]
+	default = upstream
+[user]
+	name = James Ross-Gowan
+	email = rossymiles@gmail.com

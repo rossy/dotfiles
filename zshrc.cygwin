@@ -1,0 +1,6 @@
+alias c='cygstart'
+alias e='cygstart -x "$(pwd)"'
+
+export CYGWIN=nodosfilewarning
+unset TMP
+unset TEMP
