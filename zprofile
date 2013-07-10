@@ -1,1 +1,1 @@
-source ~/.zprofile.solarized
+source ~/.zprofile.eighties

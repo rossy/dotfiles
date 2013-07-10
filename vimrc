@@ -75,12 +75,9 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-if has("python")
-	Bundle 'Valloric/YouCompleteMe'
-endif
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/base16-vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'stephenmckinney/vim-solarized-powerline'
 Bundle 'ciaranm/detectindent'
@@ -89,21 +86,12 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/syntastic'
 Bundle 'groenewege/vim-less'
 
-let g:solarized_termcolors=16
-let g:solarized_termtrans=0
-let g:solarized_degrade=0
-let g:solarized_bold=1
-let g:solarized_italic=1
-let g:solarized_underline=1
-let g:solarized_contrast='high'
-let g:solarized_visibility='low'
-let g:Powerline_colorscheme='solarized16'
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_dividers_override = [' ', '|', ' ', '|']
-let g:ycm_autoclose_preview_window_after_completion = 1
 
 set background=dark
-colorscheme solarized
+let base16colorspace=256
+colorscheme base16-eighties
 
 if has('win32unix')
 	source ~/.vimrc.cygwin
