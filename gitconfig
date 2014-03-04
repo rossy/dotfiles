@@ -9,6 +9,7 @@
 	lr = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %gs %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --walk-reflogs
 	co = checkout
 	br = branch
+	rb = rebase
 	st = status -s
 	ci = commit
 	ai = commit --amend
@@ -17,6 +18,7 @@
 	ds = diff --staged
 	di = diff
 	dc = diff HEAD~1 HEAD
+	ff = merge --ff-only
 [color]
 	ui = true
 [diff]
