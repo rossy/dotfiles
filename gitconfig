@@ -26,6 +26,8 @@
 	mnemonicprefix = true
 [push]
 	default = upstream
+[merge]
+	defaultToUpstream = true
 [user]
 	name = James Ross-Gowan
 	email = rossymiles@gmail.com
